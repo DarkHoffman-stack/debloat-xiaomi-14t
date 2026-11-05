@@ -1,0 +1,34 @@
+# Xiaomi 14T (degas_global, HyperOS 3) — 2026-11
+# one package per shell call; all reversible:
+#   pm disable-user entries -> pm enable --user 0
+#   uninstall entries       -> pm install-existing
+# owner keeps: facebook/messenger/instagram, mi cloud, finddevice,
+# nfc payment, mirror/mishare/mi_connect, camera+gallery, xmsf (push)
+
+# telemetry / feedback
+com.miui.analytics            # OneTrack
+com.miui.bugreport
+com.miui.misightservice       # MIUI predictions
+com.miui.daemon               # diagnostics daemon
+com.miui.miservice            # Mi support/feedback
+com.google.android.feedback
+
+# ads / GetApps push
+com.miui.msa.global           # system ad service
+com.xiaomi.discover           # GetApps feed pusher
+com.xiaomi.mipicks            # GetApps store
+
+# filler apps
+com.miui.yellowpage
+com.miui.cleaner              # Cleaner daemon
+com.xiaomi.joyose             # game optimization (server-side)
+com.xiaomi.glgm               # game log
+
+# AI image extras (owner unused)
+com.xiaomi.aiasst.vision
+com.xiaomi.aicr
+com.xiaomi.aiservice
+
+# third-party (disable-user works on these)
+com.amazon.appmanager         # background Amazon app installer
+cn.wps.xiaomi.abroad.lite     # WPS lite

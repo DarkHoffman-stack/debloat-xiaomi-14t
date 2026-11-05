@@ -1,0 +1,4 @@
+backup/
+shots/
+*.log
+local.properties
